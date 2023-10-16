@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormReactiveComponent } from './components/form-reactive/form-reactive.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormReactiveComponent
   ],
   imports: [
     BrowserModule,

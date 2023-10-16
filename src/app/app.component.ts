@@ -43,4 +43,16 @@ export class AppComponent implements OnInit {
   get f(): { [key: string]: AbstractControl}{
     return this.form.controls
   }
+onSubmit():void{
+  this.submitted = true;
+  if(this.form.valid){
+    return;
+  }
+console.log(JSON.stringify(this.form.value,null,2));
+}
+
+onReset():void{
+  this.submitted = false;
+  this.form.reset();
+}
 }
